@@ -1,7 +1,8 @@
-import React from "react";
 import { useBreakfastStore } from "../store/useBreakfastStore";
+import { FoodCard } from "./FoodCard";
+import "./FoodCarousel.css";
 
-export const FoodCarousel: React.FC = () => {
+export const FoodCarousel = () => {
   const items = useBreakfastStore((s) => s.items);
 
   const onDragStart = (e: React.DragEvent, id: string) => {
@@ -9,31 +10,9 @@ export const FoodCarousel: React.FC = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: 18,
-        overflowX: "auto",
-        padding: "16px 20px",
-        marginTop: 24
-      }}
-    >
-      {items.filter((i) => i.available).map((item) => (
-        <div
-          key={item.id}
-          draggable
-          onDragStart={(e) => onDragStart(e, item.id)}
-          style={{
-            fontSize: 40,
-            cursor: "grab",
-            background: "#ffffff",
-            borderRadius: 16,
-            padding: "8px 12px",
-            boxShadow: "0 4px 10px rgba(0,0,0,0.06)"
-          }}
-        >
-          {item.emoji}
-        </div>
+    <div className="food-carousel">
+      {items.filter(i => i.available).map((item) => (
+        <FoodCard key={item.id} item={item} onDragStart={onDragStart} />
       ))}
     </div>
   );
