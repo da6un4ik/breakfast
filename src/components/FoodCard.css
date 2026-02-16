@@ -1,0 +1,48 @@
+.food-card {
+  width: 128px;
+  height: 144px;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform .15s ease;
+  cursor: grab;
+}
+
+.food-card:active {
+  transform: scale(0.95);
+}
+
+.food-card-icon {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.food-emoji {
+  font-size: 40px;
+}
+
+.food-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.food-card-subtitle {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffcf8f;
+  text-transform: uppercase;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
