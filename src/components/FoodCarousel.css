@@ -1,0 +1,7 @@
+.food-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
