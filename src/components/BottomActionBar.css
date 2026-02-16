@@ -1,0 +1,30 @@
+.bottom-action-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.bottom-action-btn {
+  pointer-events: auto;
+  background: #ffcf8f;
+  color: black;
+  font-weight: bold;
+  height: 56px;
+  padding: 0 40px;
+  border-radius: 999px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 20px rgba(255,207,143,0.3);
+  transition: transform .15s ease;
+}
+
+.bottom-action-btn:active {
+  transform: scale(0.95);
+}
