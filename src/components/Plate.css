@@ -1,0 +1,15 @@
+.plate {
+  width: 280px;
+  height: 280px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.plate-item {
+  position: absolute;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
