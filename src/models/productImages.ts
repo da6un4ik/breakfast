@@ -1,0 +1,7 @@
+const productImages = [
+    'https://example.com/image1.jpg',
+    'https://example.com/image2.jpg',
+    'https://example.com/image3.jpg'
+];
+
+export default productImages;
